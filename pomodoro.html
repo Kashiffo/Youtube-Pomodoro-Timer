@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="tab_title">Pomodoro</title>
+
+    <link rel="stylesheet" href="pomodoro.css" />
+  </head>
+  <body>
+    <h1>Pomodoro Timer</h1>
+    <div id="container">
+      <p id="work" class="label">Work:</p>
+      <p id="break" class="label">Break:</p>
+      <p id="cycles" class="label">Cycles:</p>
+      <!--Work Timer-->
+      <div id="work-timer" class="timer">
+        <p id="w_minutes">00</p>
+        <p class="semicolon">:</p>
+        <p id="w_seconds">10</p>
+      </div>
+
+      <!--Cycle Counter-->
+      <p id="counter" class="timer">0</p>
+
+      <!--Break Timer-->
+      <div id="break-timer" class="timer">
+        <p id="b_minutes">00</p>
+        <p class="semicolon">:</p>
+        <p id="b_seconds">10</p>
+      </div>
+      <button id="start" class="btn">Start</button>
+      <button id="stp" class="btn">Pause</button>
+      <button id="reset" class="btn">Reset</button>
+   <!-- 1. The <iframe> video player will replace this <div> tag. -->
+<div id="player"></div>
+<div id="media">
+  <label for="cars">Choose a playlist:</label>
+
+  <select name="cars" id="cars" multiple>
+    <option id="hh1" value="hip-hop">lofi hip-hop</option>
+    <option id="jz" value="Jazz">lofi Jazz</option>
+    <option id="stdy" value="study">lofi study</option>
+    <option id="christian" value="christian">lofi hip-hop</option>
+  </select>
+</div>
+<!-- Youtube div -->
+  <div id="player" style="position: absolute; top: -9999px; left: -9999px; ">
+  </div>
+  <div id="info">loading...</div>
+  <script src="http://www.youtube.com/player_api"></script>
+
+
+    <script src="/pomodoro-master copy/pomodoro.js"></script>
+  </body>
+</html>
